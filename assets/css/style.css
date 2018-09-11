@@ -5,6 +5,7 @@ nav {
 .custom-nav {
 	float: right;
 	padding: 0;
+	max-height: 94px;
 }
 /* Primary Header */
 .logo {
@@ -30,6 +31,9 @@ nav {
 	border-bottom: 1px solid #ccc;
 	background-color: #fff;	
 }
+.logo-padding {
+	padding-left: 0;
+}
 /* Footer */
 .push {
 	height: 105px;
@@ -38,7 +42,7 @@ nav {
 	background: #666;
 	height: 50px;
 	width: 100%;
-	position: static;
+	position: fixed;
 	text-align: center;
 	border-top: 5px solid #4aaaa5;
 	margin-top: 50px;
@@ -49,7 +53,7 @@ nav {
 .footer-text {
 	color: #a8a8a8;
 	padding-top: 27.5px;
-	margin-bottom: 0;
+	font-size: 16px;
 }
 /* Bio */
 .bio{
@@ -86,75 +90,56 @@ nav {
 	text-align: center;
 	height: 25px;
 	padding-top: 12.5px;
-	top: 175px;
 }
-.project1 {
-	top: 5%;
-	left: 5%;
-	background-image: url("../../assets/images/Burning.jpg");
-	background-size: 225px 225px;
-	position: absolute;
-}
-.project2 {
-	top: 5%;
-	right: 5%;
-	background-image: url("../../assets/images/Landscape.jpg");
-	background-size: 225px 225px;
-	position: absolute;
-}
-.project3 {
-	top: 32%;
-	left: 37%;
-	background-image: url("../../assets/images/List.jpg");
-	background-size: 225px 225px;
-	position: absolute;
-}
-.project4 {
-	bottom: 5%;
-	left: 5%;
-	background-image: url("../../assets/images/OrangeMoon.jpg");
-	background-size: 225px 225px;
-	position: absolute;
-}
-.project5 {
-	bottom: 5%;
-	right: 5%;
-	background-image: url("../../assets/images/Peacock.jpg");
-	background-size: 225px 225px;
-	position: absolute;
-}
-/* Ugly portfolio page */
-.ugly-enclosing-box {
-	height: 600px;
-	position: relative;
-	padding-top: 25px;
-}
-.ugly-portfolio-box {
+/*  Portfolio page */
+.portfolio-box {
 	width: 225px;
 	height: 225px;
 	border: 2px solid #a8a8a8;
 	float: left;
-	margin: 20px;
 }
-.uglyproject1 {
+.project-height {
+	height: 225px;
+}
+.project1 {
 	background-image: url("../../assets/images/Burning.jpg");
 	background-size: 225px 225px;
+	transition: all .2s ease-in-out;
 }
-.uglyproject2 {
+.project1:hover {
+	transform: scale(1.3);
+}
+.project2 {
 	background-image: url("../../assets/images/Landscape.jpg");
 	background-size: 225px 225px;
+	transition: all .2s ease-in-out;
 }
-.uglyproject3 {
+.project2:hover {
+	transform: scale(1.3);
+}
+.project3 {
 	background-image: url("../../assets/images/List.jpg");
 	background-size: 225px 225px;
+	transition: all .2s ease-in-out;
 }
-.uglyproject4 {
+.project3:hover {
+	transform: scale(1.3);
+}
+.project4 {
 	background-image: url("../../assets/images/OrangeMoon.jpg");
 	background-size: 225px 225px;
+	transition: all .2s ease-in-out;
 }
-.uglyproject5 {
+.project4:hover {
+	transform: scale(1.3);
+}
+.project5 {
 	background-image: url("../../assets/images/Peacock.jpg");
 	background-size: 225px 225px;
+	transition: all .2s ease-in-out;
+}
+.project5:hover {
+	transform: scale(1.3);
 }
 /* Contact */
 .contact-form {
@@ -241,15 +226,14 @@ h1 {
 	margin: 50px;
 	padding: 50px 0;
 }
-.ugly-central-container {
+.portfolio-central-container {
 	width: 760px;
-	margin: 50px;
-	padding: 50px 0;
 }
 .body-container {
 	margin: 0 auto;
 	margin-top: 50px;
 	background: #fff;
+	padding: 5px 15px 15px 15px;
 }
 /* Clearfix */
 .clearfix::after {
