@@ -9,30 +9,62 @@
 </head>
 <body id="top">
     <!--Header and nav bar-->
-    <header class="primary-header clearfix">
-        <div class="container">
-            <h1 class="logo">Kevin Flerlage</h1>
-            <nav class="primary-nav">
-                <ul>
-                    <li><a href="index.html">About</a></li><!--
-                    --><li><a href="portfolio.html">Portfolio</a></li><!--
-                    --><li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="container-fluid">
+            <header class="row primary-header">
+                <!-- To add some space before the header -->
+                <div class="d-none d-md-block col-md-1"></div>
+                <!-- Logo -->
+                <div class="col-8 col-sm-6 no-left-padding">
+                    <h1 class="d-none d-md-block logo">Kevin Flerlage</h1>
+                    <h1 class="d-md-none small-logo">Kevin Flerlage</h1>
+                </div>
+                <!-- Puts space between logo & nav bar when screen is small -->
+                <div class="d-none d-sm-block col-sm-2 d-md-none"></div>
+                <!-- Nav Bar start -->
+                <div class="col-4">
+                    <nav class="navbar navbar-expand-md custom-nav">
+                        <div class="d-none d-md-block push"></div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Adds extra space after the nav bar if md screen or bigger -->
+                <div class="d-none d-md-block col-md-1"></div>
+            </header>
+            </div>
     <!--This is the start of the contact form-->
-    <section class="body-container">
-        <div class="central-container">
-            <h2 class="body-header">Contact Me</h2>
-            <form class="contact-form" action="#" method="post">
-                Name: <br><input class="input-box" type="text"><br><br>
-                Email: <br><input class="input-box" type="email"><br><br>
-                Message: <br><textarea class="message-box" type="text"></textarea><br><br>
-                <input class="submit-button" type="submit" value="Submit">
-            </form>
+    <div class="container">
+        <div class="row">
+            <!-- Blank space outside the message container -->
+            <div class="d-none d-md-block col-md-1"></div>
+                <!-- Body and the contact form -->
+                <div class="col-12 col-md-10">
+                    <section class="body-container">
+                            <h2 class="body-header">Contact Me</h2>
+                            <div class="row">
+                                <!-- Blank space to center the contact form -->
+                                <div class="d-none d-md-block col-md-2"></div>
+                                    <!-- The contact form -->
+                                    <div class="col-12 col-md-8">
+                                        <form class="contact-form" action="#" method="post">
+                                            Name: <br><input class="input-box" type="text"><br><br>
+                                            Email: <br><input class="input-box" type="email"><br><br>
+                                            Message: <br><textarea class="message-box" type="text"></textarea><br><br>
+                                            <input class="submit-button" type="submit" value="Submit">
+                                        </form>
+                                    </div>
+                                <!-- Blank space to center the contact form -->
+                                <div class="d-none d-md-block col-md-2"></div>
+                            </div>
+                    </section>
+                </div>
+            <!-- Blank space outside the message container -->
+            <div class="d-none d-md-block col-md-1"></div>
         </div>
-    </section>
+    </div>
     <!-- Push to create space for the footer -->
     <div class="push"></div>
     <!-- Footer -->
